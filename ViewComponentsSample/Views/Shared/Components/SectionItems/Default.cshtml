@@ -1,0 +1,9 @@
+@model List<ViewComponentsSample.Models.SectionItem>
+@addTagHelper *, ViewComponentsSample
+<ul>
+    @foreach (var item in Model)
+    {
+        <vc:section-item text="@item.Text"></vc:section-item>
+    }
+</ul>
+
